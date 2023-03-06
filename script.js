@@ -316,7 +316,7 @@ form.addEventListener("submit",async(e)=>{
         })
         let maildata = {title: form.childNodes[3].childNodes[1].value.trim(), subject: form.childNodes[5].childNodes[1].value.trim()}
         Object.assign(maildata,{receipients : emails})
-        v = await fetch("http://localhost:8080/api/sendmails",{
+        v = await fetch("https://backend-hqo5.onrender.com/api/sendmails",{
             mode: 'cors',
             method: "POST",
             body: JSON.stringify({from : 'hesh.teo@gmail.com', emails: emails, message: {subject: form.childNodes[3].childNodes[1].value.trim(),body: form.childNodes[5].childNodes[1].value.trim()}}),
