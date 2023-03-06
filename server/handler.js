@@ -13,4 +13,3 @@ const server = app.listen(8080,()=>{
 	})
 module.exports.server = server;
 module.exports.app = app;
-module.exports.database = connection;
