@@ -5,7 +5,7 @@ const keys = require('./keys');
 passport.use(
     new GoogleStrategy({
     //option for the srategy
-    callbackURL: '/auth/google/redirect',
+    callbackURL: 'http://team-project-auth1.onrender.com/auth/google/redirect',
     clientID:keys.google.clientID,
     clientSecret: keys.google.clientSecret
 },(accessToken,refresToken,profile,done)=>{
