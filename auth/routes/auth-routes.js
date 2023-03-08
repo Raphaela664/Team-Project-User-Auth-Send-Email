@@ -10,7 +10,7 @@ router.get('/logout', (req,res)=>{
 })
 //auth with google
 router.get('/google',passport.authenticate('google',{
-    scope: ['profile','refreshToken','accessToken']
+    scope: ['profile']
 }));
 
 //callback app for google redirect
