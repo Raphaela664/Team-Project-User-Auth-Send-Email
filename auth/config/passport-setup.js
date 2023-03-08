@@ -11,9 +11,8 @@ passport.use(
 },(accessToken,refresToken,profile,done)=>{
 
 
-    //passport callback function
-    //console.log('You better work');
-    console.log(profile);
+    localStorage.setItem('accessToken',JSON.stringify(accessToken));
+    localStorage.setItem('resfresToken',JSON.stringify(refresToken));
 }
 )
 )
